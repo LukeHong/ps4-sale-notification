@@ -43,7 +43,7 @@ if len(match) > 0:
         new_flag = False
         for article in match:
             if article['id'] in history:
-                pass
+                continue
             new_flag = True
             history.append(article['id'])
             notification(article['title'], article['link'])
